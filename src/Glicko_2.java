@@ -56,6 +56,9 @@ public class Glicko_2 {
         return Math.round(val * Math.pow(10, places)) / Math.pow(10, places);
     }
 
+    /**
+     * Player object that stores ratings, histories, and volatilities for all rounds
+     */
     static class Player {
 
         private UUID id;
@@ -263,6 +266,9 @@ public class Glicko_2 {
 
     }
 
+    /**
+     * Game object that stores both players and status of each game
+     */
     static class Game {
 
         private UUID player1;
@@ -311,6 +317,9 @@ public class Glicko_2 {
 
     }
 
+    /**
+     * Range object that represents player's expected rating range
+     */
     static class Range {
         double original;
         double low;
